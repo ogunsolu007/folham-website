@@ -136,7 +136,7 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div className="project">
+          <div className="project project_mobile">
             <div className="flex project_text middle">
               <h3>outdoor advert</h3>
               <h1>Street Activation</h1>

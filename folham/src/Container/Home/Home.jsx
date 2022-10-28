@@ -101,24 +101,26 @@ const Home = () => {
         </div>
 
         <div className="numbers">
-          <div className="flex numbers_stat">
-            <span>36</span>
-            <p>
-              years of
-              <br /> experience
-            </p>
-          </div>
-          <div className="flex numbers_stat">
-            <span>454</span>
-            <p>
-              completed <br /> project
-            </p>
-          </div>
-          <div className="flex numbers_stat">
-            <span>127</span>
-            <p>
-              happy <br /> clients
-            </p>
+          <div className="numbers_container container">
+            <div className="flex numbers_stat">
+              <span>36</span>
+              <p>
+                years of
+                <br /> experience
+              </p>
+            </div>
+            <div className="flex numbers_stat">
+              <span>454</span>
+              <p>
+                completed <br /> project
+              </p>
+            </div>
+            <div className="flex numbers_stat">
+              <span>127</span>
+              <p>
+                happy <br /> clients
+              </p>
+            </div>
           </div>
         </div>
       </div>

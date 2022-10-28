@@ -122,8 +122,8 @@ img {
   background: var(--color-orange-yellow);
 }
 .numbers_container {
-  /* display: flex;
-  align-items: center; */
+  display: flex;
+  align-items: center;
 }
 
 .numbers_stat {

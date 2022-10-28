@@ -125,11 +125,6 @@ const Home = () => {
         </div>
       </div>
 
-      {/*  
-
-     
-      
-    
       <div className="portfolio">
         <div className="portfolio_title">
           <h3>projects</h3>
@@ -164,6 +159,12 @@ const Home = () => {
           </div>
         </div>
       </div>
+      {/*  
+
+     
+      
+    
+      
       {/* <div className="clients">
         {images.map((image) => {
           <div className="image" key={image.logo}>

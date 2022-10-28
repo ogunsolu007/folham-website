@@ -89,7 +89,7 @@ img {
   font-size: 40px;
 }
 .home__company-history {
-  margin: 40px 0 0;
+  margin: 40px 0 ;
 }
 .company_history {
   display: flex;
@@ -148,11 +148,9 @@ img {
   font-size: 75px;
   white-space: none;
 }
-
 .portfolio {
-  padding: 40px;
+  margin: 400px 0;
 }
-
 .portfolio_title {
   text-align: center;
   text-transform: capitalize;
@@ -170,10 +168,10 @@ img {
   color: var(--color-dark-blue);
 }
 .project {
-  width: 100%;
   display: flex;
   align-items: center;
   padding: 20px 0;
+  border: 2px solid red;
 }
 .project_text {
   display: flex;
@@ -181,6 +179,7 @@ img {
   align-items: flex-start;
   padding-left: 20px;
   letter-spacing: 2px;
+  border: 2px solid orange;
 }
 .project_text h3 {
   color: var(--color-orange-yellow);
@@ -189,6 +188,7 @@ img {
 }
 .project_text h1 {
   color: var(--color-dark-blue);
+  margin: 20px 0;
 }
 .project_text p {
   font-size: 14px;
@@ -198,10 +198,10 @@ img {
   align-items: flex-end;
   padding-right: 20px;
 }
-.project img {
-  width: 150px;
-  border-radius: 0;
-  object-fit: fill;
+.project_image{
+  width: 100%;
+  /* overflow: hidden; */
+  border: 1px violet solid;
 }
 
 .clients {
@@ -267,7 +267,5 @@ img {
   .project_text h1 {
     font-size: 18px;
   }
-  .project img {
-    width: 300px;
-  }
+ 
 }

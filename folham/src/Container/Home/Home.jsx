@@ -125,14 +125,16 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="portfolio">
-        <div className="portfolio_title">
+      <div className="portfolio container">
+        <div className="portfolio_title ">
           <h3>projects</h3>
           <h2>Our OOH Sites</h2>
         </div>
-        <div className="projects ">
+        <div className="projects  ">
           <div className="project ">
-            <img src={slide3} alt="" className="flex" />
+            <div className="flex project_image">
+              <img src={slide1} alt="" />
+            </div>
             <div className="flex project_text">
               <h3>outdoor advert</h3>
               <h1>Protrait Led</h1>
@@ -147,10 +149,14 @@ const Home = () => {
               <h1>Street Activation</h1>
               <p>Lagos - Lekki Palms Mall</p>
             </div>
-            <img src={slide3} alt="" className="flex" />
+            <div className="flex project_image">
+              <img src={slide1} alt="" />
+            </div>
           </div>
           <div className="project">
-            <img src={slide3} alt="" className="flex" />
+            <div className="flex project_image">
+              <img src={slide1} alt="" />
+            </div>
             <div className="flex project_text ">
               <h3>outdoor advert</h3>
               <h1>Digital billboard</h1>

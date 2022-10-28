@@ -89,7 +89,7 @@ img {
   font-size: 40px;
 }
 .home__company-history {
-  margin: 40px 0 ;
+  margin: 40px 0;
 }
 .company_history {
   display: flex;
@@ -171,7 +171,6 @@ img {
   display: flex;
   align-items: center;
   padding: 20px 0;
-  border: 2px solid red;
 }
 .project_text {
   display: flex;
@@ -179,7 +178,6 @@ img {
   align-items: flex-start;
   padding-left: 20px;
   letter-spacing: 2px;
-  border: 2px solid orange;
 }
 .project_text h3 {
   color: var(--color-orange-yellow);
@@ -198,10 +196,8 @@ img {
   align-items: flex-end;
   padding-right: 20px;
 }
-.project_image{
+.project_image {
   width: 100%;
-  /* overflow: hidden; */
-  border: 1px violet solid;
 }
 
 .clients {
@@ -267,5 +263,4 @@ img {
   .project_text h1 {
     font-size: 18px;
   }
- 
 }

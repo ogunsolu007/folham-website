@@ -133,7 +133,7 @@ const Home = () => {
         <div className="projects  ">
           <div className="project ">
             <div className="flex project_image">
-              <img src={slide1} alt="" />
+              <img src={slide3} alt="" />
             </div>
             <div className="flex project_text">
               <h3>outdoor advert</h3>
@@ -150,12 +150,12 @@ const Home = () => {
               <p>Lagos - Lekki Palms Mall</p>
             </div>
             <div className="flex project_image">
-              <img src={slide1} alt="" />
+              <img src={slide3} alt="" />
             </div>
           </div>
           <div className="project">
             <div className="flex project_image">
-              <img src={slide1} alt="" />
+              <img src={slide3} alt="" />
             </div>
             <div className="flex project_text ">
               <h3>outdoor advert</h3>

@@ -227,13 +227,12 @@ img {
     flex-direction: column;
     align-items: center;
   }
-  .company_history-text {
-    padding: 30px 20px;
+  .company_history-text h1 {
+    line-height: normal;
     text-align: center;
   }
-
   .company_history-text p {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 100;
   }
   .numbers {

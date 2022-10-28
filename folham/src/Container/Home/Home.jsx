@@ -102,20 +102,20 @@ const Home = () => {
 
         <div className="numbers">
           <div className="numbers_container container">
-            <div className="flex numbers_stat">
+            <div className=" numbers_stat">
               <span>36</span>
               <p>
                 years of
                 <br /> experience
               </p>
             </div>
-            <div className="flex numbers_stat">
+            <div className=" numbers_stat">
               <span>454</span>
               <p>
                 completed <br /> project
               </p>
             </div>
-            <div className="flex numbers_stat">
+            <div className=" numbers_stat">
               <span>127</span>
               <p>
                 happy <br /> clients

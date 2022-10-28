@@ -119,6 +119,7 @@ img {
 }
 .numbers {
   background: var(--color-orange-yellow);
+  max-width: 100%;
 }
 .numbers_container {
   display: flex;

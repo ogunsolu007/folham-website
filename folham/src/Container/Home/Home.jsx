@@ -99,11 +99,7 @@ const Home = () => {
             <img src={slide2} alt="company work" />
           </div>
         </div>
-      </div>
 
-      {/*  
-
-     
         <div className="numbers">
           <div className="flex numbers_stat">
             <span>36</span>
@@ -125,6 +121,12 @@ const Home = () => {
             </p>
           </div>
         </div>
+      </div>
+
+      {/*  
+
+     
+      
     
       <div className="portfolio">
         <div className="portfolio_title">

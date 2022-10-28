@@ -35,7 +35,7 @@ img {
   margin-bottom: 20px;
   font-size: 34px;
   letter-spacing: 5px;
-  line-height: normal;
+  line-height: 65px;
 }
 .hero_text-container span {
   color: var(--color-orange-yellow);

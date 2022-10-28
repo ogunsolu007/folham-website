@@ -1,10 +1,15 @@
 .home {
   font-family: "Roboto", sans-serif;
   margin-top: 120px;
+  line-height: 25px;
 }
 
 .flex {
   flex: 1 1 0px;
+}
+img {
+  border-radius: 10px;
+  object-fit: contain;
 }
 .hero_section {
   color: var(--color-white);
@@ -24,15 +29,13 @@
   justify-content: center;
   padding: 25px 15px;
 }
-.hero_img-section img {
-  border-radius: 10px;
-  object-fit: contain;
-}
+
 .hero_text-container h1 {
   color: var(--color-dark-blue);
   margin-bottom: 20px;
   font-size: 34px;
   letter-spacing: 5px;
+  line-height: normal;
 }
 .hero_text-container span {
   color: var(--color-orange-yellow);
@@ -85,17 +88,21 @@
 .feature .icon {
   font-size: 40px;
 }
+.home__company-history {
+  margin: 40px 0;
+}
 .company_history {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .company_history-text {
-  padding: 50px 70px;
+  padding: 25px 15px;
 }
 .company_history-text h1 {
   color: var(--color-dark-blue);
   font-family: "Poppins", sans-serif;
 }
-
 .company_history-text p {
   font-size: 16px;
   margin-top: 20px;
@@ -226,14 +233,9 @@
   }
 
   .company_history-text p {
-    font-size: 16px;
+    font-size: 14px;
+    font-weight: 100;
   }
-  .company_history-img {
-    display: flex;
-    width: 300px;
-    margin-bottom: 40px;
-  }
-
   .numbers {
     flex-direction: column;
     align-items: flex-start;

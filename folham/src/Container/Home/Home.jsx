@@ -71,10 +71,9 @@ const Home = () => {
           </div>
         </div>
       </div>
-      {/*  
 
       <div className="home__company-history">
-        <div className="company_history ">
+        <div className="company_history  container">
           <div className="flex company_history-text">
             <h1>FOLHAM NIG. LIMITED</h1>
             <p>
@@ -100,6 +99,11 @@ const Home = () => {
             <img src={slide2} alt="company work" />
           </div>
         </div>
+      </div>
+
+      {/*  
+
+     
         <div className="numbers">
           <div className="flex numbers_stat">
             <span>36</span>
@@ -121,7 +125,7 @@ const Home = () => {
             </p>
           </div>
         </div>
-      </div>
+    
       <div className="portfolio">
         <div className="portfolio_title">
           <h3>projects</h3>

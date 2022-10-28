@@ -18,7 +18,6 @@
 .hero_text-section {
   color: var(--color-dark-blue);
   padding: 25px 15px;
- 
 }
 .hero_img-section {
   display: flex;
@@ -210,9 +209,9 @@
     display: flex;
     flex-direction: column;
   }
-  .hero_img-section {
+  /* .hero_img-section {
     padding: 20px 40px;
-  }
+  } */
   .features {
     flex-direction: column;
   }

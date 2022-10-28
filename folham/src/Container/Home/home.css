@@ -13,7 +13,6 @@
   align-items: center;
   justify-content: space-between;
   margin-top: 90px;
- 
 }
 .hero_text-section {
   color: var(--color-dark-blue);
@@ -205,6 +204,9 @@
 }
 
 @media screen and (max-width: 500px) {
+  .home {
+    margin-top: 90px;
+  }
   .hero_section {
     display: flex;
     flex-direction: column;

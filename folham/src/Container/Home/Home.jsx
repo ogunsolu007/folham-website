@@ -10,7 +10,7 @@ import { MdOutlineCampaign, MdBrandingWatermark } from "react-icons/md";
 const Home = () => {
   return (
     <div className="home">
-      <div className="hero_section">
+      <div className="hero_section container">
         <div className="flex hero_text-section">
           <div className="hero_text-container">
             <h1>
@@ -32,7 +32,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="features_container">
+     {/*  <div className="features_container">
         <div className="features container">
           <div className="feature">
             <SiJamboard className="icon" />
@@ -159,8 +159,7 @@ const Home = () => {
           <div className="image" key={image.logo}>
             <img src={image.logo} alt="" />
           </div>;
-        })}
-      </div> */}
+        })}*/}
     </div>
   );
 };

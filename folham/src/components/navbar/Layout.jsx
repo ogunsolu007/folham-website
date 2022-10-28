@@ -10,42 +10,44 @@ const Layout = () => {
   return (
     <div>
       <nav>
-        <img src={logo} alt=" logo" className="nav__logo" />
-        <ul className="nav__links">
-          <li>
-            <Link className="links" to="/">
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link className="links" to="/about">
-              About
-            </Link>
-          </li>
-          <li>
-            <Link className="links" to="/service">
-              Services
-            </Link>
-          </li>
-          <li>
-            <Link className="links" to="/location">
-              Our location
-            </Link>
-          </li>
-          <li>
-            <Link className="links" to="/contact">
-              Contact
-            </Link>
-          </li>
-          {/* <li>
+        <div className="nav__container container">
+          <img src={logo} alt=" logo" className="nav__logo" />
+          <ul className="nav__links">
+            <li>
+              <Link className="links" to="/">
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link className="links" to="/about">
+                About
+              </Link>
+            </li>
+            <li>
+              <Link className="links" to="/service">
+                Services
+              </Link>
+            </li>
+            <li>
+              <Link className="links" to="/location">
+                Our location
+              </Link>
+            </li>
+            <li>
+              <Link className="links" to="/contact">
+                Contact
+              </Link>
+            </li>
+            {/* <li>
             <Link to="/nothing-here">Nothing Here</Link>
           </li> */}
-        </ul>
-        <div
-          className="mobile__nav "
-          onClick={() => setToggle((prev) => !prev)}
-        >
-          {toogle ? <GiCrossedBones /> : <GiHamburgerMenu />}
+          </ul>
+          <div
+            className="mobile__nav "
+            onClick={() => setToggle((prev) => !prev)}
+          >
+            {toogle ? <GiCrossedBones /> : <GiHamburgerMenu />}
+          </div>
         </div>
       </nav>
       <Outlet />

@@ -202,3 +202,17 @@ img {
 .image {
   box-shadow: -3px -3px 11px 4px #000;
 }
+
+@media screen and (max-width: 470px) {
+
+  .hero_section{
+    display: flex;
+    flex-direction: column;
+    
+  }
+ 
+  .hero_img-section{
+    padding: 20px 40px;
+  }
+ 
+}

@@ -24,6 +24,7 @@
   align-items: center;
   font-size: 24px;
   gap: 15px;
+  cursor: pointer;
 }
 .dp {
   display: flex;
@@ -39,4 +40,16 @@
   padding-bottom: 20px;
 }
 
-
+@media screen and (min-width: 500px) {
+  .footer_container {
+    flex-direction: column;
+    padding: 40px 10px;
+    font-size: 12px;
+  }
+  .flex {
+    margin-bottom: 50px;
+  }
+  .socials{
+    align-self: flex-start;
+  }
+}

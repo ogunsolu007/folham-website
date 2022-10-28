@@ -7,7 +7,6 @@ import { SiJamboard } from "react-icons/si";
 import { CgMediaLive } from "react-icons/cg";
 import { MdOutlineCampaign, MdBrandingWatermark } from "react-icons/md";
 
-
 const Home = () => {
   return (
     <div className="home">

@@ -32,7 +32,8 @@ const Home = () => {
           </div>
         </div>
       </div>
-     {/*  <div className="features_container">
+
+      <div className="features_container">
         <div className="features container">
           <div className="feature">
             <SiJamboard className="icon" />
@@ -70,6 +71,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      {/*  
 
       <div className="home__company-history">
         <div className="company_history ">

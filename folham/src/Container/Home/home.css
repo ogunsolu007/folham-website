@@ -54,15 +54,13 @@
 }
 
 .features_container {
-  margin-top: 60px;
-  padding: 40px 0;
+  margin-top: 50px;
 }
 .features {
-  width: 80%;
   display: flex;
   align-items: stretch;
   justify-content: space-between;
-  gap: 50px 10px;
+  gap: 30px 5px;
   flex-wrap: wrap;
 }
 .feature {
@@ -211,9 +209,7 @@
     display: flex;
     flex-direction: column;
   }
-  /* .hero_img-section {
-    padding: 20px 40px;
-  } */
+
   .features {
     flex-direction: column;
   }

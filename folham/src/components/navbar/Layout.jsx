@@ -7,7 +7,6 @@ import { GiHamburgerMenu, GiCrossedBones } from "react-icons/gi";
 import { IoMdArrowDropdown } from "react-icons/io";
 import Dropdown from "../dropdown/Dropdown";
 
-
 const Layout = () => {
   const [toggle, setToggle] = useState(false);
   const [dropdown, setDropdown] = useState(false);
@@ -16,6 +15,12 @@ const Layout = () => {
 
   const closeMobileMenu = () => setToggle(false);
 
+  const onMouseEnter = () => {
+    window.innerWidth < 960 ? setDropdown(false) : setDropdown(true);
+  };
+const onMouseLeave = () => {
+  window.innerWidth < 960 ? setDropdown(false) : setDropdown(false);
+};
   return (
     <div>
       <nav>
@@ -40,7 +45,10 @@ const Layout = () => {
                 Services
               </Link>
             </li>
-            <li className="nav__item">
+            <li className="nav__item"
+            onMouseEnter={onMouseEnter}
+            onMouseLeave={onMouseLeave}
+            >
               <Link className="links" to="/location" onClick={closeMobileMenu}>
                 Our location <IoMdArrowDropdown />
               </Link>

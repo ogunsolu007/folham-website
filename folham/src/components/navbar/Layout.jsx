@@ -24,7 +24,7 @@ const Layout = () => {
           <div className="menu__icon " onClick={handleToggle}>
             {toggle ? <GiCrossedBones /> : <GiHamburgerMenu />}
           </div>{" "}
-          <ul className={toggle ? "nav__menu active container" : "nav__menu container"}>
+          <ul className={toggle ? "nav__menu active" : "nav__menu "}>
             <li className="nav__item">
               <Link className="links" to="/" onClick={closeMobileMenu}>
                 Home

@@ -207,9 +207,9 @@ img {
   box-shadow: -3px -3px 11px 4px #000;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 40em) {
   .home {
-    margin-top: 90px;
+    margin-top: 70px;
   }
   .hero_section {
     display: flex;

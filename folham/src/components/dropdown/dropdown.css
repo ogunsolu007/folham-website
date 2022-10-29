@@ -38,9 +38,10 @@
 
 @media screen and (max-width: 40em) {
   .dropdown__menu {
+    position: absolute;
     width: 250px;
     top: 90px;
-    margin-left: 100px;
+    margin-left: 80px;
     overflow: hidden;
     z-index: 10000;
     background-color: white;

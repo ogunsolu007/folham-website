@@ -4,37 +4,50 @@ import logo from "../../assets/folham-logo.png";
 import Footer from "../footer/Footer";
 import { Link, Outlet } from "react-router-dom";
 import { GiHamburgerMenu, GiCrossedBones } from "react-icons/gi";
+import { IoMdArrowDropdown } from "react-icons/io";
+import Dropdown from "../dropdown/Dropdown";
+
 
 const Layout = () => {
-  const [toogle, setToggle] = useState(false);
+  const [toggle, setToggle] = useState(false);
+  const [dropdown, setDropdown] = useState(false);
+
+  const handleToggle = () => setToggle((prev) => !prev);
+
+  const closeMobileMenu = () => setToggle(false);
+
   return (
     <div>
       <nav>
         <div className="nav__container container">
           <img src={logo} alt=" logo" className="nav__logo" />
-          <ul className="nav__links">
-            <li>
-              <Link className="links" to="/">
+          <div className="menu__icon " onClick={handleToggle}>
+            {toggle ? <GiCrossedBones /> : <GiHamburgerMenu />}
+          </div>{" "}
+          <ul className={toggle ? "nav__menu active container" : "nav__menu container"}>
+            <li className="nav__item">
+              <Link className="links" to="/" onClick={closeMobileMenu}>
                 Home
               </Link>
             </li>
-            <li>
-              <Link className="links" to="/about">
+            <li className="nav__item">
+              <Link className="links" to="/about" onClick={closeMobileMenu}>
                 About
               </Link>
             </li>
-            <li>
-              <Link className="links" to="/service">
+            <li className="nav__item">
+              <Link className="links" to="/service" onClick={closeMobileMenu}>
                 Services
               </Link>
             </li>
-            <li>
-              <Link className="links" to="/location">
-                Our location
+            <li className="nav__item">
+              <Link className="links" to="/location" onClick={closeMobileMenu}>
+                Our location <IoMdArrowDropdown />
               </Link>
+              {dropdown && <Dropdown />}
             </li>
-            <li>
-              <Link className="links" to="/contact">
+            <li className="nav__item">
+              <Link className="links" to="/contact" onClick={closeMobileMenu}>
                 Contact
               </Link>
             </li>
@@ -42,12 +55,6 @@ const Layout = () => {
             <Link to="/nothing-here">Nothing Here</Link>
           </li> */}
           </ul>
-          <div
-            className="mobile__nav "
-            onClick={() => setToggle((prev) => !prev)}
-          >
-            {toogle ? <GiCrossedBones /> : <GiHamburgerMenu />}
-          </div>
         </div>
       </nav>
       <Outlet />

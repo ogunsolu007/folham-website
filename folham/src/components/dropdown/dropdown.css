@@ -40,7 +40,9 @@
   .dropdown__menu {
     width: 250px;
     top: 90px;
-    margin-left: 120px;
+    margin-left: 100px;
+    overflow: hidden;
+    z-index: 10000;
     background-color: white;
    
   }

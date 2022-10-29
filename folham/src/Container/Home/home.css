@@ -209,7 +209,7 @@ img {
 
 @media screen and (max-width: 40em) {
   .home {
-    margin-top: 60px;
+    margin-top: 0px;
   }
   .hero_section {
     display: flex;

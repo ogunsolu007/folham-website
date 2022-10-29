@@ -21,7 +21,7 @@
   background: var(--color-orange-yellow);
 }
 .dropdown__menu.clicked {
-  display: none;
+  /* display: none; */
 }
 .dropdown__link {
   width: 100%;

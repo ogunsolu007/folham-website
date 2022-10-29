@@ -21,7 +21,7 @@
   background: var(--color-orange-yellow);
 }
 .dropdown__menu.clicked {
-  /* display: none; */
+  display: none;
 }
 .dropdown__link {
   width: 100%;
@@ -34,4 +34,21 @@
 }
 .dropdown__link:hover {
   color: aliceblue;
+}
+
+@media screen and (max-width: 40em) {
+  .dropdown__menu {
+    width: 250px;
+    top: 90px;
+    margin-left: 183px;
+    background-color: white;
+   
+  }
+  .dropdown__menu li:hover {
+    background: var(--color-white);
+  }
+  .dropdown__link:hover {
+    color:aliceblue;
+    background: var(--color-dark-blue);
+  }
 }

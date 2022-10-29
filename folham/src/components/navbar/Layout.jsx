@@ -16,11 +16,11 @@ const Layout = () => {
   const closeMobileMenu = () => setToggle(false);
 
   const onMouseEnter = () => {
-    window.innerWidth < 960 ? setDropdown(false) : setDropdown(true);
+    setDropdown(true);
   };
-const onMouseLeave = () => {
-  window.innerWidth < 960 ? setDropdown(false) : setDropdown(false);
-};
+  const onMouseLeave = () => {
+    setDropdown(false);
+  };
   return (
     <div>
       <nav>
@@ -45,11 +45,12 @@ const onMouseLeave = () => {
                 Services
               </Link>
             </li>
-            <li className="nav__item"
-            onMouseEnter={onMouseEnter}
-            onMouseLeave={onMouseLeave}
+            <li
+              className="nav__item"
+              onMouseEnter={onMouseEnter}
+              onMouseLeave={onMouseLeave}
             >
-              <Link className="links" to="/location" onClick={closeMobileMenu}>
+              <Link className="links" to="/#" >
                 Our location <IoMdArrowDropdown />
               </Link>
               {dropdown && <Dropdown />}

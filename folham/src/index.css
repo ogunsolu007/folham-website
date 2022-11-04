@@ -58,12 +58,6 @@ select {
   font: inherit;
 }
 
-.section_padding {
-  padding: 4rem 3rem;
-}
-.section_margin {
-  padding: 4rem 0;
-}
 
 .btn {
   padding: 4px 6px;

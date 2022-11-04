@@ -14,18 +14,18 @@ const Home = () => {
   const[index,setIndex]= useState(0)
 
   return (
-    <div className="home section_padding">
-      <div className="hero_section ">
+    <div className="home ">
+      <div className="hero_section section_padding">
         <div className="hero_section-content">
-            <h1>
-              INNOVATIVE EFFICIENT <span>& PROFESSIONAL</span>
-            </h1>
-            <p>
-              We are an innovative company bounded by top-notch{" "}
-              <span>professionalism and </span>
-              driven to deliver quality products/services.
-            </p>
-            <button className="btn hero_btn ">Explore our site</button>
+          <h1>
+            INNOVATIVE EFFICIENT <span>& PROFESSIONAL</span>
+          </h1>
+          <p>
+            We are an innovative company bounded by top-notch{" "}
+            <span>professionalism and </span>
+            driven to deliver quality products/services.
+          </p>
+          <button className="btn hero_btn ">Explore our site</button>
         </div>
         <div className="hero_section-image">
           <img src={slide1} alt={slides.name} />

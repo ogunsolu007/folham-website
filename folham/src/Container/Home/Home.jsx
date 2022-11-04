@@ -1,18 +1,22 @@
-import React from "react";
+
 import "./home.css";
-import slide1 from "../../assets/slide1.jpg";
 import slide2 from "../../assets/slide2.jpg";
 import slide3 from "../../assets/slide3.jpg";
+import slide1 from "../../assets/slide1.jpg";
 import { SiJamboard } from "react-icons/si";
 import { CgMediaLive } from "react-icons/cg";
 import { MdOutlineCampaign, MdBrandingWatermark } from "react-icons/md";
+import Slider from "../../components/Slider/slider";
+import { slides } from "../../constants/data";
+import { useState } from "react";
 
 const Home = () => {
+  const[index,setIndex]= useState(0)
+
   return (
-    <div className="home">
-      <div className="hero_section container">
-        <div className="flex hero_text-section">
-          <div className="hero_text-container">
+    <div className="home section_padding">
+      <div className="hero_section ">
+        <div className="hero_section-content">
             <h1>
               INNOVATIVE EFFICIENT <span>& PROFESSIONAL</span>
             </h1>
@@ -21,20 +25,17 @@ const Home = () => {
               <span>professionalism and </span>
               driven to deliver quality products/services.
             </p>
-            <button className="btn hero_btn">Explore our site</button>
-          </div>
+            <button className="btn hero_btn ">Explore our site</button>
         </div>
-        <div className="flex hero_img-section">
-          <div className="slider">
-            <img src={slide1} alt="slide1" />
-            <img src={slide2} alt="slide1" />
-            <img src={slide2} alt="slide1" />
-          </div>
+        <div className="hero_section-image">
+          <img src={slide1} alt={slides.name} />
+          <img src={slide1} alt={slides.name} />
+          <img src={slide1} alt={slides.name} />
         </div>
       </div>
 
-      <div className="features_container">
-        <div className="features container">
+      <div className="features_container section_margin">
+        <div className="features">
           <div className="feature">
             <SiJamboard className="icon" />
             <h3>Billboards</h3>
@@ -71,8 +72,19 @@ const Home = () => {
           </div>
         </div>
       </div>
+    </div>
+  );
+};
 
-      <div className="home__company-history">
+export default Home;
+
+{
+  /* 
+       */
+}
+
+{
+  /*  <div className="home__company-history">
         <div className="company_history  container">
           <div className="flex company_history-text">
             <h1>FOLHAM NIG. LIMITED</h1>
@@ -123,9 +135,22 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */
+}
+{
+  /*  
+  
+      {/* <div className="clients">
+        {images.map((image) => {
+          <div className="image" key={image.logo}>
+            <img src={image.logo} alt="" />
+          </div>;
+        })}*/
+}
 
-      <div className="portfolio container">
+/* 
+
+    <div className="portfolio container">
         <div className="portfolio_title ">
           <h3>projects</h3>
           <h2>Our OOH Sites</h2>
@@ -164,21 +189,4 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div>
-      {/*  
-
-     
-      
-    
-      
-      {/* <div className="clients">
-        {images.map((image) => {
-          <div className="image" key={image.logo}>
-            <img src={image.logo} alt="" />
-          </div>;
-        })}*/}
-    </div>
-  );
-};
-
-export default Home;
+      </div> */

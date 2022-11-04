@@ -12,7 +12,9 @@ const Dropdown = () => {
     <>
       <ul
         onClick={handleToggle}
-        className={click ? "dropdown__menu clicked" : "dropdown__menu"}
+        className={
+          click ? "dropdown__menu clicked " : "dropdown__menu scale-up-center"
+        }
       >
         {dropDownLinks.map((dropDown, index) => {
           return (

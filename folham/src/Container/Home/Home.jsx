@@ -14,7 +14,7 @@ const Home = () => {
 
   return (
     <div className="home ">
-      <div className="hero_section section_padding">
+      <div className="hero_section ">
         <div className="hero_section-content">
           <h1>
             INNOVATIVE EFFICIENT <span>& PROFESSIONAL</span>
@@ -33,7 +33,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="features_container section_margin">
+     
         <div className="features">
           <div className="feature">
             <SiJamboard className="icon" />
@@ -69,7 +69,6 @@ const Home = () => {
               clients campaign process from inception to end.
             </p>
           </div>
-        </div>
       </div>
     </div>
   );
@@ -77,3 +76,121 @@ const Home = () => {
 
 export default Home;
 
+
+
+
+
+
+
+{
+  /* 
+       */
+}
+
+{
+  /*  <div className="home__company-history">
+        <div className="company_history  container">
+          <div className="flex company_history-text">
+            <h1>FOLHAM NIG. LIMITED</h1>
+            <p>
+              Since 1984, Folham has used its outdoor advertising expertise to
+              help companies of every size reach out to their current and
+              potential customers. To compete in the fast growing industry, we
+              keep modernizing our operations by introducing new products
+              offerings in the OOH space, these products range from Digital LED
+              Billboards, to "Human Walking" billboards which are popular for
+              creating awareness for brands during activations and other formal
+              /informal events. We actively participate in providing publicly
+              owned OOH assets like; Public Buses (BRT), Bus Shelters and Street
+              Lamppost to our existing clients in various parts of the country.
+            </p>
+            <p>
+              Dedicated to the growth of our partners/clients, we work with
+              poised and qualified employees to achieve their current
+              expectations and satisfy any changing needs in the advertising
+              industry.
+            </p>
+          </div>
+          <div className="flex company_history-img">
+            <img src={slide2} alt="company work" />
+          </div>
+        </div>
+
+        <div className="numbers">
+          <div className="numbers_container container">
+            <div className=" numbers_stat">
+              <span>36</span>
+              <p>
+                years of
+                <br /> experience
+              </p>
+            </div>
+            <div className=" numbers_stat">
+              <span>454</span>
+              <p>
+                completed <br /> project
+              </p>
+            </div>
+            <div className=" numbers_stat">
+              <span>127</span>
+              <p>
+                happy <br /> clients
+              </p>
+            </div>
+          </div>
+        </div>
+      </div> */
+}
+{
+  /*  
+  
+      {/* <div className="clients">
+        {images.map((image) => {
+          <div className="image" key={image.logo}>
+            <img src={image.logo} alt="" />
+          </div>;
+        })}*/
+}
+
+/* 
+
+    <div className="portfolio container">
+        <div className="portfolio_title ">
+          <h3>projects</h3>
+          <h2>Our OOH Sites</h2>
+        </div>
+        <div className="projects  ">
+          <div className="project ">
+            <div className="flex project_image">
+              <img src={slide3} alt="" />
+            </div>
+            <div className="flex project_text">
+              <h3>outdoor advert</h3>
+              <h1>Protrait Led</h1>
+              <p>
+                Abuja - Oladipo Diya road, intersection before City Gate road.
+              </p>
+            </div>
+          </div>
+          <div className="project project_mobile">
+            <div className="flex project_text middle">
+              <h3>outdoor advert</h3>
+              <h1>Street Activation</h1>
+              <p>Lagos - Lekki Palms Mall</p>
+            </div>
+            <div className="flex project_image">
+              <img src={slide3} alt="" />
+            </div>
+          </div>
+          <div className="project">
+            <div className="flex project_image">
+              <img src={slide3} alt="" />
+            </div>
+            <div className="flex project_text ">
+              <h3>outdoor advert</h3>
+              <h1>Digital billboard</h1>
+              <p>Abuja - Rita Lori Hotel, Garki.</p>
+            </div>
+          </div>
+        </div>
+      </div> */

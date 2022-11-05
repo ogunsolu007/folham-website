@@ -3,6 +3,7 @@
   color: var(--color-white);
   font-family: "Roboto", sans-serif;
   font-size: 16px;
+  padding: 3rem;
 }
 .footer_container {
   display: flex;
@@ -40,7 +41,7 @@
   padding-bottom: 20px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1050px) {
   .footer_container {
     flex-direction: column;
     padding: 40px 10px;
@@ -49,7 +50,12 @@
   .flex {
     margin-bottom: 50px;
   }
-  .socials{
+  .socials {
     align-self: flex-start;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .footer {
+    padding: 0;
   }
 }

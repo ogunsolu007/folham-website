@@ -93,45 +93,31 @@ const Home = () => {
           <img src={slide2} alt="company work" />
         </div>
       </div>
+
+      <div className="numbers">
+        <div className=" numbers_stat">
+          <span>36</span>
+          <p>
+            years of
+            <br /> experience
+          </p>
+        </div>
+        <div className=" numbers_stat">
+          <span>454</span>
+          <p>
+            completed <br /> project
+          </p>
+        </div>
+        <div className=" numbers_stat">
+          <span>127</span>
+          <p>
+            happy <br /> clients
+          </p>
+        </div> 
+      </div>
     </div>
   );
 };
 
 export default Home;
 
-/* 
-        <div className="numbers">
-          <div className="numbers_container container">
-            <div className=" numbers_stat">
-              <span>36</span>
-              <p>
-                years of
-                <br /> experience
-              </p>
-            </div>
-            <div className=" numbers_stat">
-              <span>454</span>
-              <p>
-                completed <br /> project
-              </p>
-            </div>
-            <div className=" numbers_stat">
-              <span>127</span>
-              <p>
-                happy <br /> clients
-              </p>
-            </div>
-          </div>
-        </div>
-      </div> 
-
-  
-      <div className="clients">
-        {images.map((image) => {
-          <div className="image" key={image.logo}>
-            <img src={image.logo} alt="" />
-          </div>;
-        })}
-
-
- */

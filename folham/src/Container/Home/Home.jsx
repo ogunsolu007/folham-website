@@ -7,6 +7,9 @@ import { CgMediaLive } from "react-icons/cg";
 import { MdOutlineCampaign, MdBrandingWatermark } from "react-icons/md";
 import { slides } from "../../constants/data";
 import { useState } from "react";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
+
 
 const Home = () => {
   const [index, setIndex] = useState(0);
@@ -26,45 +29,54 @@ const Home = () => {
           <button className="btn hero_btn ">Explore our site</button>
         </div>
         <div className="hero_section-image">
-          <img src={slide1} alt={slides.name} />
-          <img src={slide1} alt={slides.name} />
-          <img src={slide1} alt={slides.name} />
+          <Carousel showArrows={true} autoPlay={true} interval="20000">
+            <img src={slide1} alt={slides.name} />
+            <img src={slide2} alt={slides.name} />
+            <img src={slide3} alt={slides.name} />
+          </Carousel>
         </div>
       </div>
-
-      <div className="features">
-        <div className="feature">
-          <SiJamboard className="icon" />
-          <h3>Billboards</h3>
-          <p>
-            Our Out Of Home Formats are strategically placed nationwide reaching
-            our clients target audience efficiently and effectively.
-          </p>
+      <div className="features_container">
+        <div className="section__title">
+          <h1>
+            Our <span>Core</span> Features
+          </h1>
         </div>
-        <div className="feature">
-          <CgMediaLive className="icon" />
-          <h3>media buying</h3>
-          <p>
-            With over 30 years experience in the OOH Industry, we have carved a
-            niche in media buying, successfully planning and executing media
-            buying for all our clients.
-          </p>
-        </div>
-        <div className="feature">
-          <MdBrandingWatermark className="icon" />
-          <h3>BRANDING & ACTIVATIONS</h3>
-          <p>
-            We consult for brands looking at changing their entire brand outlook
-            as well as implementing brand activation campaigns for our clients.
-          </p>
-        </div>
-        <div className="feature">
-          <MdOutlineCampaign className="icon" />
-          <h3>CAMPAIGN DEPLOYMENT/MAINTENANCE</h3>
-          <p>
-            We believe in delivering value hence our utmost investment in our
-            clients campaign process from inception to end.
-          </p>
+        <div className="features">
+          <div className="feature ">
+            <SiJamboard className="icon" />
+            <h3>Billboards</h3>
+            <p>
+              Our Out Of Home Formats are strategically placed nationwide
+              reaching our clients target audience efficiently and effectively.
+            </p>
+          </div>
+          <div className="feature">
+            <CgMediaLive className="icon" />
+            <h3>media buying</h3>
+            <p>
+              With over 30 years experience in the OOH Industry, we have carved
+              a niche in media buying, successfully planning and executing media
+              buying for all our clients.
+            </p>
+          </div>
+          <div className="feature">
+            <MdBrandingWatermark className="icon" />
+            <h3>BRANDING & ACTIVATIONS</h3>
+            <p>
+              We consult for brands looking at changing their entire brand
+              outlook as well as implementing brand activation campaigns for our
+              clients.
+            </p>
+          </div>
+          <div className="feature">
+            <MdOutlineCampaign className="icon" />
+            <h3>CAMPAIGN DEPLOYMENT / MAINTENANCE</h3>
+            <p>
+              We believe in delivering value hence our utmost investment in our
+              clients campaign process from inception to end.
+            </p>
+          </div>
         </div>
       </div>
 
@@ -113,7 +125,7 @@ const Home = () => {
           <p>
             happy <br /> clients
           </p>
-        </div> 
+        </div>
       </div>
     </div>
   );
@@ -121,3 +133,7 @@ const Home = () => {
 
 export default Home;
 
+
+/* http://react-responsive-carousel.js.org/storybook/?path=/story/01-basic--base&knob-showArrows_Toggles=true&knob-showStatus_Toggles=&knob-showIndicators_Toggles=&knob-infiniteLoop_Toggles=true&knob-showThumbs_Toggles=&knob-useKeyboardArrows_Toggles=true&knob-autoPlay_Toggles=true&knob-stopOnHover_Toggles=true&knob-swipeable_Toggles=true&knob-dynamicHeight_Toggles=true&knob-emulateTouch_Toggles=true&knob-autoFocus_Toggles=&knob-thumbWidth_Values=100&knob-selectedItem_Values=0&knob-interval_Values=2000&knob-transitionTime_Values=500&knob-swipeScrollTolerance_Values=5
+
+http://react-responsive-carousel.js.org/storybook/?path=/story/01-basic--base&knob-showArrows_Toggles=true&knob-showStatus_Toggles=&knob-showIndicators_Toggles=&knob-infiniteLoop_Toggles=true&knob-showThumbs_Toggles=&knob-useKeyboardArrows_Toggles=true&knob-autoPlay_Toggles=true&knob-stopOnHover_Toggles=true&knob-swipeable_Toggles=true&knob-dynamicHeight_Toggles=true&knob-emulateTouch_Toggles=true&knob-autoFocus_Toggles=&knob-thumbWidth_Values=100&knob-selectedItem_Values=0&knob-interval_Values=2000&knob-transitionTime_Values=500&knob-swipeScrollTolerance_Values=5 */

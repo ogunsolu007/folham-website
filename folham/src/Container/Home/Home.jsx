@@ -10,7 +10,6 @@ import { useState } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 
-
 const Home = () => {
   const [index, setIndex] = useState(0);
 
@@ -29,7 +28,15 @@ const Home = () => {
           <button className="btn hero_btn ">Explore our site</button>
         </div>
         <div className="hero_section-image">
-          <Carousel showArrows={true} autoPlay={true} interval="20000">
+          <Carousel
+            showArrows={false}
+            autoPlay={true}
+            interval="3000"
+            showThumbs={false}
+            showIndicators={false}
+            showStatus={false}
+            infiniteLoop={true}
+          >
             <img src={slide1} alt={slides.name} />
             <img src={slide2} alt={slides.name} />
             <img src={slide3} alt={slides.name} />
@@ -132,7 +139,6 @@ const Home = () => {
 };
 
 export default Home;
-
 
 /* http://react-responsive-carousel.js.org/storybook/?path=/story/01-basic--base&knob-showArrows_Toggles=true&knob-showStatus_Toggles=&knob-showIndicators_Toggles=&knob-infiniteLoop_Toggles=true&knob-showThumbs_Toggles=&knob-useKeyboardArrows_Toggles=true&knob-autoPlay_Toggles=true&knob-stopOnHover_Toggles=true&knob-swipeable_Toggles=true&knob-dynamicHeight_Toggles=true&knob-emulateTouch_Toggles=true&knob-autoFocus_Toggles=&knob-thumbWidth_Values=100&knob-selectedItem_Values=0&knob-interval_Values=2000&knob-transitionTime_Values=500&knob-swipeScrollTolerance_Values=5
 
